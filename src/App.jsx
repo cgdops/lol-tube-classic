@@ -5,8 +5,9 @@ import EraFilterBar from './components/EraFilterBar';
 import VideoCard from './components/VideoCard';
 import VideoModal from './components/VideoModal';
 import PrivacyModal from './components/PrivacyModal';
+import TermsModal from './components/TermsModal';
 import { searchClassicVideos } from './services/youtube';
-import { Sparkles, Film, Radio, Shield } from 'lucide-react';
+import { Sparkles, Film, Radio, Shield, FileText } from 'lucide-react';
 
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -19,6 +20,7 @@ export default function App() {
   const [apiStatus, setApiStatus] = useState(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [privacyOpen, setPrivacyOpen] = useState(false);
+  const [termsOpen, setTermsOpen] = useState(false);
 
   // Load videos whenever search, year, or category changes (with 350ms search debounce)
   useEffect(() => {
@@ -76,6 +78,7 @@ export default function App() {
           onSelectCategory={handleSelectCategory}
           onSelectQuickLink={handleSelectQuickLink}
           onOpenPrivacy={() => setPrivacyOpen(true)}
+          onOpenTerms={() => setTermsOpen(true)}
           isOpen={sidebarOpen}
         />
 
@@ -128,14 +131,21 @@ export default function App() {
             </div>
           )}
 
-          {/* Footer Privacy Link */}
+          {/* Footer Privacy & Terms Links */}
           <footer style={{ marginTop: '40px', padding: '20px 0', borderTop: '1px solid #e2e2e2', textAlign: 'center', color: '#888', fontSize: '11px' }}>
             <span>LoL Tube Classic (2009–2013 Nostalgia Vault) • </span>
             <button
               onClick={() => setPrivacyOpen(true)}
-              style={{ background: 'none', border: 'none', color: '#666', textDecoration: 'underline', cursor: 'pointer', padding: 0, fontSize: '11px' }}
+              style={{ background: 'none', border: 'none', color: '#666', textDecoration: 'underline', cursor: 'pointer', padding: 0, fontSize: '11px', marginRight: 12 }}
             >
-              Privacy Policy (No Data Retained or Sold)
+              Privacy Policy
+            </button>
+            <span>• </span>
+            <button
+              onClick={() => setTermsOpen(true)}
+              style={{ background: 'none', border: 'none', color: '#666', textDecoration: 'underline', cursor: 'pointer', padding: 0, fontSize: '11px', marginLeft: 12 }}
+            >
+              Terms of Service
             </button>
           </footer>
         </main>
@@ -155,6 +165,12 @@ export default function App() {
       <PrivacyModal
         isOpen={privacyOpen}
         onClose={() => setPrivacyOpen(false)}
+      />
+
+      {/* Terms of Service Modal */}
+      <TermsModal
+        isOpen={termsOpen}
+        onClose={() => setTermsOpen(false)}
       />
     </div>
   );

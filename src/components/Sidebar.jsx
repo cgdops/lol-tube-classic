@@ -1,8 +1,8 @@
 import React from 'react';
-import { Home, Trophy, Music, Zap, Flame, Star, Sparkles, Shield } from 'lucide-react';
+import { Home, Trophy, Music, Zap, Flame, Star, Sparkles, Shield, FileText } from 'lucide-react';
 import { CLASSIC_CATALOG } from '../data/classicCatalog.js';
 
-export default function Sidebar({ activeCategory, onSelectCategory, isOpen, onSelectQuickLink, onOpenPrivacy }) {
+export default function Sidebar({ activeCategory, onSelectCategory, isOpen, onSelectQuickLink, onOpenPrivacy, onOpenTerms }) {
   if (!isOpen) return null;
 
   const countForCategory = (catId) => {
@@ -71,6 +71,14 @@ export default function Sidebar({ activeCategory, onSelectCategory, isOpen, onSe
         >
           <Shield size={14} />
           <span>Privacy Policy</span>
+        </div>
+        <div
+          className="yt-guide-item"
+          style={{ fontSize: '11px', color: '#666' }}
+          onClick={onOpenTerms}
+        >
+          <FileText size={14} />
+          <span>Terms of Service</span>
         </div>
       </div>
     </aside>
