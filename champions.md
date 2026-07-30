@@ -1,0 +1,26 @@
+# League Classic Champions
+
+- Ashe
+- Blitzcrank
+- Brand
+- Gangplank
+- Garen
+- Jax
+- Kassadin
+- Kayle
+- Leona
+- Lux
+- Malzahar
+- Master Yi
+- Miss Fortune
+- Nasus
+- Sion
+- Sivir
+- Sona
+- Soraka
+- Taric
+- Teemo
+- Tristana
+- Tryndamere
+- Veigar
+- Warwick
