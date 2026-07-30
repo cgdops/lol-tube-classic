@@ -22,6 +22,17 @@ export default function App() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
   const [termsOpen, setTermsOpen] = useState(false);
 
+  // Auto-open modal if URL hash or search parameter includes privacy or terms
+  useEffect(() => {
+    const hash = window.location.hash.toLowerCase();
+    const search = window.location.search.toLowerCase();
+    if (hash.includes('privacy') || search.includes('privacy')) {
+      setPrivacyOpen(true);
+    } else if (hash.includes('terms') || search.includes('terms')) {
+      setTermsOpen(true);
+    }
+  }, []);
+
   // Load videos whenever search, year, or category changes (with 350ms search debounce)
   useEffect(() => {
     let isMounted = true;
