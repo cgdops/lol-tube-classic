@@ -2,7 +2,7 @@ import React from 'react';
 import { Home, Trophy, Music, Zap, Flame, Star, Sparkles, Shield } from 'lucide-react';
 import { CLASSIC_CATALOG } from '../data/classicCatalog.js';
 
-export default function Sidebar({ activeCategory, onSelectCategory, isOpen, onSelectQuickLink }) {
+export default function Sidebar({ activeCategory, onSelectCategory, isOpen, onSelectQuickLink, onOpenPrivacy }) {
   if (!isOpen) return null;
 
   const countForCategory = (catId) => {
@@ -60,6 +60,17 @@ export default function Sidebar({ activeCategory, onSelectCategory, isOpen, onSe
         </div>
         <div className="yt-guide-item" onClick={() => handleQuick('esports', 'xPeke Kassadin')}>
           <span>• xPeke Kassadin Backdoor</span>
+        </div>
+      </div>
+
+      <div className="yt-guide-group" style={{ marginTop: 'auto', borderTop: '1px solid #e2e2e2', paddingTop: '12px' }}>
+        <div
+          className="yt-guide-item"
+          style={{ fontSize: '11px', color: '#666' }}
+          onClick={onOpenPrivacy}
+        >
+          <Shield size={14} />
+          <span>Privacy Policy</span>
         </div>
       </div>
     </aside>

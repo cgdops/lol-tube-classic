@@ -4,8 +4,9 @@ import Sidebar from './components/Sidebar';
 import EraFilterBar from './components/EraFilterBar';
 import VideoCard from './components/VideoCard';
 import VideoModal from './components/VideoModal';
+import PrivacyModal from './components/PrivacyModal';
 import { searchClassicVideos } from './services/youtube';
-import { Sparkles, Film, Radio } from 'lucide-react';
+import { Sparkles, Film, Radio, Shield } from 'lucide-react';
 
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -17,6 +18,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [apiStatus, setApiStatus] = useState(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [privacyOpen, setPrivacyOpen] = useState(false);
 
   // Load videos whenever search, year, or category changes (with 350ms search debounce)
   useEffect(() => {
@@ -73,6 +75,7 @@ export default function App() {
           activeCategory={activeCategory}
           onSelectCategory={handleSelectCategory}
           onSelectQuickLink={handleSelectQuickLink}
+          onOpenPrivacy={() => setPrivacyOpen(true)}
           isOpen={sidebarOpen}
         />
 
@@ -124,6 +127,17 @@ export default function App() {
               ))}
             </div>
           )}
+
+          {/* Footer Privacy Link */}
+          <footer style={{ marginTop: '40px', padding: '20px 0', borderTop: '1px solid #e2e2e2', textAlign: 'center', color: '#888', fontSize: '11px' }}>
+            <span>LoL Tube Classic (2009–2013 Nostalgia Vault) • </span>
+            <button
+              onClick={() => setPrivacyOpen(true)}
+              style={{ background: 'none', border: 'none', color: '#666', textDecoration: 'underline', cursor: 'pointer', padding: 0, fontSize: '11px' }}
+            >
+              Privacy Policy (No Data Retained or Sold)
+            </button>
+          </footer>
         </main>
       </div>
 
@@ -136,6 +150,12 @@ export default function App() {
           onSelectRelated={(v) => setSelectedVideo(v)}
         />
       )}
+
+      {/* Privacy Policy Modal */}
+      <PrivacyModal
+        isOpen={privacyOpen}
+        onClose={() => setPrivacyOpen(false)}
+      />
     </div>
   );
 }
