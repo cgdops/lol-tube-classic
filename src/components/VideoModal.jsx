@@ -1,10 +1,11 @@
 import React from 'react';
-import { X, ThumbsUp, ThumbsDown, Share2, Flag } from 'lucide-react';
+import { X, ThumbsUp, ThumbsDown, Share2, Flag, ExternalLink } from 'lucide-react';
 
 export default function VideoModal({ video, onClose, relatedVideos, onSelectRelated }) {
   if (!video) return null;
 
   const embedUrl = `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
+  const watchUrl = `https://www.youtube.com/watch?v=${video.id}`;
   const likeRatio = video.likeRatio || 97;
 
   return (
@@ -13,9 +14,21 @@ export default function VideoModal({ video, onClose, relatedVideos, onSelectRela
         {/* Header */}
         <div className="yt-modal-header">
           <h3>{video.title}</h3>
-          <button className="yt-close-btn" onClick={onClose} title="Close Player">
-            <X size={20} />
-          </button>
+          <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+            <a
+              href={watchUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="yt-filter-btn"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '4px 10px', fontSize: '12px', textDecoration: 'none', color: '#333', background: '#f8f8f8', border: '1px solid #ccc', borderRadius: '2px' }}
+            >
+              <ExternalLink size={13} />
+              <span>Watch on YouTube</span>
+            </a>
+            <button className="yt-close-btn" onClick={onClose} title="Close Player">
+              <X size={20} />
+            </button>
+          </div>
         </div>
 
         {/* Modal Body */}

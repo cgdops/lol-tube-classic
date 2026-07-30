@@ -1,19 +1,33 @@
 import React from 'react';
 import { Home, Trophy, Music, Zap, Flame, Star, Sparkles, Shield } from 'lucide-react';
+import { CLASSIC_CATALOG } from '../data/classicCatalog.js';
 
-export default function Sidebar({ activeCategory, onSelectCategory, isOpen }) {
+export default function Sidebar({ activeCategory, onSelectCategory, isOpen, onSelectQuickLink }) {
   if (!isOpen) return null;
+
+  const countForCategory = (catId) => {
+    if (catId === 'ALL') return CLASSIC_CATALOG.length;
+    return CLASSIC_CATALOG.filter((item) => item.category === catId).length;
+  };
 
   const categories = [
     { id: 'ALL', label: 'What to Watch', icon: Home, count: 'All' },
-    { id: 'dunkey', label: 'Videogamedunkey', icon: Sparkles, count: '3' },
-    { id: 'sivhd', label: 'SivHD Vault', icon: Zap, count: '2' },
-    { id: 'montages', label: 'Top 5 Plays & Montages', icon: Trophy, count: '2' },
-    { id: 'music', label: 'Music & Parodies', icon: Music, count: '2' },
-    { id: 'esports', label: 'Esports (S1-S3 Finals)', icon: Flame, count: '4' },
-    { id: 'spotlights', label: 'Champion Spotlights', icon: Star, count: '2' },
-    { id: 'offmeta', label: 'AP & Off-Meta Builds', icon: Shield, count: '1' },
+    { id: 'dunkey', label: 'Videogamedunkey', icon: Sparkles, count: countForCategory('dunkey') },
+    { id: 'sivhd', label: 'SivHD Vault', icon: Zap, count: countForCategory('sivhd') },
+    { id: 'montages', label: 'Top 5 Plays & Montages', icon: Trophy, count: countForCategory('montages') },
+    { id: 'music', label: 'Music & Parodies', icon: Music, count: countForCategory('music') },
+    { id: 'esports', label: 'Esports (S1-S3 Finals)', icon: Flame, count: countForCategory('esports') },
+    { id: 'spotlights', label: 'Champion Spotlights', icon: Star, count: countForCategory('spotlights') },
+    { id: 'offmeta', label: 'AP & Off-Meta Builds', icon: Shield, count: countForCategory('offmeta') },
   ];
+
+  const handleQuick = (catId, queryText) => {
+    if (onSelectQuickLink) {
+      onSelectQuickLink(catId, queryText);
+    } else {
+      onSelectCategory(catId);
+    }
+  };
 
   return (
     <aside className="yt-sidebar">
@@ -38,13 +52,13 @@ export default function Sidebar({ activeCategory, onSelectCategory, isOpen }) {
 
       <div className="yt-guide-group">
         <div className="yt-guide-title">Season 3 Classics</div>
-        <div className="yt-guide-item" onClick={() => onSelectCategory('offmeta')}>
+        <div className="yt-guide-item" onClick={() => handleQuick('offmeta', 'Deathfire Grasp')}>
           <span>• Deathfire Grasp Rush</span>
         </div>
-        <div className="yt-guide-item" onClick={() => onSelectCategory('sivhd')}>
+        <div className="yt-guide-item" onClick={() => handleQuick('sivhd', 'AP Master Yi')}>
           <span>• AP Master Yi Resets</span>
         </div>
-        <div className="yt-guide-item" onClick={() => onSelectCategory('esports')}>
+        <div className="yt-guide-item" onClick={() => handleQuick('esports', 'xPeke Kassadin')}>
           <span>• xPeke Kassadin Backdoor</span>
         </div>
       </div>

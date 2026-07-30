@@ -52,6 +52,11 @@ export default function App() {
     setActiveCategory(catId);
   };
 
+  const handleSelectQuickLink = (catId, queryText) => {
+    setActiveCategory(catId);
+    setSearchQuery(queryText);
+  };
+
   const handleSelectYear = (yearId) => {
     setActiveYear(yearId);
   };
@@ -68,6 +73,7 @@ export default function App() {
         <Sidebar
           activeCategory={activeCategory}
           onSelectCategory={handleSelectCategory}
+          onSelectQuickLink={handleSelectQuickLink}
           isOpen={sidebarOpen}
         />
 

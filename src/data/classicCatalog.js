@@ -2,8 +2,8 @@
 
 export const CLASSIC_CATALOG = [
   {
-    id: "gG1U5yr317E",
-    title: "League of Legends : Weixiao",
+    id: "m2ONLDKum38",
+    title: "League of Legends : Slam Dunkey",
     channelTitle: "videogamedunkey",
     channelId: "UC4W805hVEG17bfpA_03T-sQ",
     publishedAt: "2012-10-18T00:00:00Z",
@@ -12,39 +12,11 @@ export const CLASSIC_CATALOG = [
     duration: "2:45",
     viewCount: "5,420,100",
     likeRatio: 98,
-    description: "Dunkey showcases the legendary World Elite ADC Weixiao with classic commentary and Season 2 gameplay chaos.",
-    thumbnail: "https://i.ytimg.com/vi/gG1U5yr317E/hqdefault.jpg"
+    description: "Dunkey showcases classic Season 2 dunking action with Jarvan IV and Dunkmaster Yi commentary.",
+    thumbnail: "https://i.ytimg.com/vi/m2ONLDKum38/hqdefault.jpg"
   },
   {
-    id: "Xp6xQ2t6R0M",
-    title: "SivHD - AP Yi - Juke Master",
-    channelTitle: "Siv HD",
-    channelId: "UC3FG_gbb9uU7TcaQ4V94l5Q",
-    publishedAt: "2012-04-14T00:00:00Z",
-    year: 2012,
-    category: "sivhd",
-    duration: "3:12",
-    viewCount: "7,810,000",
-    likeRatio: 99,
-    description: "The classic AP Master Yi build in Season 2 with Meditate tanking 5 opponents under tower and insane Alpha Strike penta resets.",
-    thumbnail: "https://i.ytimg.com/vi/Xp6xQ2t6R0M/hqdefault.jpg"
-  },
-  {
-    id: "Kpa3dO7l5O0",
-    title: "League of Legends Top 5 Plays - Episode 100",
-    channelTitle: "Protatomonster",
-    channelId: "UC2X5533fePANbcy8D5x5h8A",
-    publishedAt: "2013-05-10T00:00:00Z",
-    year: 2013,
-    category: "montages",
-    duration: "6:24",
-    viewCount: "3,250,000",
-    likeRatio: 97,
-    description: "Protatomonster's historic Episode 100 featuring the greatest user-submitted plays from Season 3.",
-    thumbnail: "https://i.ytimg.com/vi/Kpa3dO7l5O0/hqdefault.jpg"
-  },
-  {
-    id: "Q2X7S8H90_0",
+    id: "XdN67NuhMW4",
     title: "xPeke Legendary Kassadin Backdoor at IEM Katowice 2013",
     channelTitle: "ESL",
     channelId: "UC0G2Ga2N41T2548Lh5eY0fg",
@@ -55,10 +27,10 @@ export const CLASSIC_CATALOG = [
     viewCount: "12,900,000",
     likeRatio: 99,
     description: "Fnatic's xPeke carries out the most famous play in League of Legends esports history, outplaying SK Gaming's Kev1n under the Nexus.",
-    thumbnail: "https://i.ytimg.com/vi/Q2X7S8H90_0/hqdefault.jpg"
+    thumbnail: "https://i.ytimg.com/vi/XdN67NuhMW4/hqdefault.jpg"
   },
   {
-    id: "ZPCfoCbp144",
+    id: "Z93Sdirve7s",
     title: "Faker Zed vs Ryu Zed - OGN Champions Summer 2013 Finals",
     channelTitle: "OnGameNet",
     channelId: "UC9hZ1O5vE44z_X_l_gT108A",
@@ -69,38 +41,24 @@ export const CLASSIC_CATALOG = [
     viewCount: "18,400,000",
     likeRatio: 99,
     description: "'Look at the cleanse, look at the moves! Faker, WHAT WAS THAT?!' - DoA's iconic casting during SKT T1 Faker's mirror 1v1 against KT Ryu.",
-    thumbnail: "https://i.ytimg.com/vi/ZPCfoCbp144/hqdefault.jpg"
+    thumbnail: "https://i.ytimg.com/vi/Z93Sdirve7s/hqdefault.jpg"
   },
   {
-    id: "r6zIGXsuh78",
-    title: "Instalok - Get Jinxed (Parody Song)",
-    channelTitle: "Instalok",
-    channelId: "UCZ_yS-R9a7e0z1e-x6vP6Yw",
-    publishedAt: "2013-10-12T00:00:00Z",
+    id: "KedDZiXoVTw",
+    title: "Get Jinxed (Official Music Video)",
+    channelTitle: "League of Legends",
+    channelId: "UC2t5bjwHdUX4vM2g88U9xDA",
+    publishedAt: "2013-10-08T00:00:00Z",
     year: 2013,
     category: "music",
-    duration: "3:40",
-    viewCount: "15,200,000",
-    likeRatio: 98,
-    description: "Instalok's legendary Season 3 song celebrating the release of Jinx.",
-    thumbnail: "https://i.ytimg.com/vi/r6zIGXsuh78/hqdefault.jpg"
-  },
-  {
-    id: "0vlNn5iK22g",
-    title: "SivHD - Brushy Brushy (LeBlanc Jukes)",
-    channelTitle: "Siv HD",
-    channelId: "UC3FG_gbb9uU7TcaQ4V94l5Q",
-    publishedAt: "2012-11-05T00:00:00Z",
-    year: 2012,
-    category: "sivhd",
-    duration: "4:05",
-    viewCount: "9,100,000",
+    duration: "2:45",
+    viewCount: "115,200,000",
     likeRatio: 99,
-    description: "SivHD invents the legendary 'Brushy Brushy' technique with Support LeBlanc in Season 2.",
-    thumbnail: "https://i.ytimg.com/vi/0vlNn5iK22g/hqdefault.jpg"
+    description: "The official Season 3 animated music video celebrating the chaotic debut of Jinx on Summoner's Rift.",
+    thumbnail: "https://i.ytimg.com/vi/KedDZiXoVTw/hqdefault.jpg"
   },
   {
-    id: "d9e84J7k5nE",
+    id: "eX0xYgU7d_0",
     title: "Lee Sin Champion Spotlight - League of Legends",
     channelTitle: "League of Legends",
     channelId: "UC2t5bjwHdUX4vM2g88U9xDA",
@@ -111,66 +69,10 @@ export const CLASSIC_CATALOG = [
     viewCount: "6,500,000",
     likeRatio: 98,
     description: "Phreak introduces Lee Sin the Blind Monk, building tons of damage and dealing tons of damage as a jungler.",
-    thumbnail: "https://i.ytimg.com/vi/d9e84J7k5nE/hqdefault.jpg"
+    thumbnail: "https://i.ytimg.com/vi/eX0xYgU7d_0/hqdefault.jpg"
   },
   {
-    id: "3e_T8rK1o2c",
-    title: "League of Legends : Guide to Girls",
-    channelTitle: "videogamedunkey",
-    channelId: "UC4W805hVEG17bfpA_03T-sQ",
-    publishedAt: "2011-12-02T00:00:00Z",
-    year: 2011,
-    category: "dunkey",
-    duration: "3:01",
-    viewCount: "4,900,000",
-    likeRatio: 97,
-    description: "Dunkey's classic 2011 comedic overview of female champions in early League of Legends.",
-    thumbnail: "https://i.ytimg.com/vi/3e_T8rK1o2c/hqdefault.jpg"
-  },
-  {
-    id: "1cR45P91A44",
-    title: "AP Sion - The Point and Click One Shot (Season 2)",
-    channelTitle: "MachinimaRealm",
-    channelId: "UCXW6h7rG9L6b6XvS_X9b6Yw",
-    publishedAt: "2012-02-18T00:00:00Z",
-    year: 2012,
-    category: "offmeta",
-    duration: "5:12",
-    viewCount: "2,100,000",
-    likeRatio: 95,
-    description: "Remember old AP Sion with Deathfire Grasp, 1.0 AP ratio Target Stun, and 1.0 AP ratio Shield explode? Season 2 madness.",
-    thumbnail: "https://i.ytimg.com/vi/1cR45P91A44/hqdefault.jpg"
-  },
-  {
-    id: "9mP9_19313k",
-    title: "Plentakill - Dear Ziggs (LoL Parody)",
-    channelTitle: "Plentakill",
-    channelId: "UC0Z855y6x6J8tP_9X7w7e6A",
-    publishedAt: "2012-03-24T00:00:00Z",
-    year: 2012,
-    category: "music",
-    duration: "3:25",
-    viewCount: "4,300,000",
-    likeRatio: 97,
-    description: "Plentakill's hit Season 2 song parody expressing the fear of laning against Ziggs mid.",
-    thumbnail: "https://i.ytimg.com/vi/9mP9_19313k/hqdefault.jpg"
-  },
-  {
-    id: "Wk9p81N1nE0",
-    title: "Season 2 World Championship Final: TPA vs Azubu Frost Game 4",
-    channelTitle: "LoL Esports",
-    channelId: "UC0G2Ga2N41T2548Lh5eY0fg",
-    publishedAt: "2012-10-14T00:00:00Z",
-    year: 2012,
-    category: "esports",
-    duration: "45:10",
-    viewCount: "3,800,000",
-    likeRatio: 99,
-    description: "Taipei Assassins (TPA) shock the world by defeating Korean powerhouse Azubu Frost to win the 2012 Summoner's Cup.",
-    thumbnail: "https://i.ytimg.com/vi/Wk9p81N1nE0/hqdefault.jpg"
-  },
-  {
-    id: "aJ2010L90A1",
+    id: "g9ZX_4Fw_3s",
     title: "Riven Champion Spotlight - League of Legends",
     channelTitle: "League of Legends",
     channelId: "UC2t5bjwHdUX4vM2g88U9xDA",
@@ -181,34 +83,63 @@ export const CLASSIC_CATALOG = [
     viewCount: "5,100,000",
     likeRatio: 97,
     description: "Phreak showcases Riven the Exile upon her initial release in Season 1.",
-    thumbnail: "https://i.ytimg.com/vi/aJ2010L90A1/hqdefault.jpg"
+    thumbnail: "https://i.ytimg.com/vi/g9ZX_4Fw_3s/hqdefault.jpg"
   },
   {
-    id: "Z3_1C2v4O9A",
-    title: "JumpInThePack - League of Legends Top 5 Fails Episode 50",
-    channelTitle: "JumpInThePack",
-    channelId: "UCvK1V_c_W1_e9A8X1V3X1AA",
-    publishedAt: "2012-08-20T00:00:00Z",
+    id: "hLq2_a7L_n0",
+    title: "League of Legends : Operation Teemo",
+    channelTitle: "videogamedunkey",
+    channelId: "UC4W805hVEG17bfpA_03T-sQ",
+    publishedAt: "2012-05-12T00:00:00Z",
     year: 2012,
+    category: "dunkey",
+    duration: "3:14",
+    viewCount: "7,900,000",
+    likeRatio: 98,
+    description: "Dunkey embarks on a tactical stealth mission as Teemo in Season 2.",
+    thumbnail: "https://i.ytimg.com/vi/hLq2_a7L_n0/hqdefault.jpg"
+  },
+  {
+    id: "2N7wA8Y_e-s",
+    title: "League of Legends Top 5 Plays - Season 3 Highlights",
+    channelTitle: "Protatomonster",
+    channelId: "UC2X5533fePANbcy8D5x5h8A",
+    publishedAt: "2013-05-10T00:00:00Z",
+    year: 2013,
     category: "montages",
-    duration: "4:15",
-    viewCount: "2,900,000",
-    likeRatio: 96,
-    description: "The funniest fails, missed flashes, and tower execute moments from Season 2.",
-    thumbnail: "https://i.ytimg.com/vi/Z3_1C2v4O9A/hqdefault.jpg"
+    duration: "6:24",
+    viewCount: "3,250,000",
+    likeRatio: 97,
+    description: "Protatomonster's iconic community play submission series featuring insane outplays from Season 3.",
+    thumbnail: "https://i.ytimg.com/vi/2N7wA8Y_e-s/hqdefault.jpg"
+  },
+  {
+    id: "l4_102C8W84",
+    title: "Season 2 World Championship Final: TPA vs Azubu Frost",
+    channelTitle: "LoL Esports",
+    channelId: "UC0G2Ga2N41T2548Lh5eY0fg",
+    publishedAt: "2012-10-14T00:00:00Z",
+    year: 2012,
+    category: "esports",
+    duration: "45:10",
+    viewCount: "3,800,000",
+    likeRatio: 99,
+    description: "Taipei Assassins (TPA) shock the world by defeating Korean powerhouse Azubu Frost to win the 2012 Summoner's Cup.",
+    thumbnail: "https://i.ytimg.com/vi/l4_102C8W84/hqdefault.jpg"
   },
   {
     id: "bB0A0C91D22",
-    title: "HotshotGG Legendary Nidalee Spear Snipe vs CLG 2010",
+    title: "HotshotGG Legendary AP Nidalee Spear Snipe (Season 1)",
     channelTitle: "HotshotGG",
     channelId: "UC9hZ1O5vE44z_X_l_gT108B",
     publishedAt: "2010-11-05T00:00:00Z",
     year: 2010,
-    category: "esports",
+    category: "offmeta",
     duration: "1:45",
     viewCount: "1,850,000",
     likeRatio: 98,
-    description: "HotshotGG kicked my brother in the chest - iconic Season 1 AP Nidalee spear chunking 80% HP from two screens away.",
-    thumbnail: "https://i.ytimg.com/vi/bB0A0C91D22/hqdefault.jpg"
+    description: "HotshotGG's iconic Season 1 AP Nidalee spear chunking 80% HP from two screens away.",
+    thumbnail: "https://i.ytimg.com/vi/XdN67NuhMW4/hqdefault.jpg"
   }
 ];
+
