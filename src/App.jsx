@@ -18,12 +18,12 @@ export default function App() {
   const [apiStatus, setApiStatus] = useState(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  // Load videos whenever search, year, or category changes
+  // Load videos whenever search, year, or category changes (with 350ms search debounce)
   useEffect(() => {
     let isMounted = true;
     setLoading(true);
 
-    async function loadData() {
+    const timer = setTimeout(async () => {
       const res = await searchClassicVideos({
         query: searchQuery,
         yearFilter: activeYear,
@@ -35,12 +35,11 @@ export default function App() {
         setApiStatus({ source: res.source, message: res.message });
         setLoading(false);
       }
-    }
-
-    loadData();
+    }, searchQuery ? 350 : 0);
 
     return () => {
       isMounted = false;
+      clearTimeout(timer);
     };
   }, [searchQuery, activeYear, activeCategory]);
 

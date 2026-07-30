@@ -10,6 +10,23 @@ export async function searchClassicVideos({ query = '', yearFilter = 'ALL', cate
   // Always filter curated catalog first for immediate response
   let curatedResults = filterCuratedCatalog(query, yearFilter, category);
 
+  // Check session cache first to save API quota
+  const cacheKey = `yt_classic_cache_${query}_${yearFilter}_${category}`;
+  if (typeof window !== 'undefined' && window.sessionStorage) {
+    const cached = sessionStorage.getItem(cacheKey);
+    if (cached) {
+      try {
+        const parsed = JSON.parse(cached);
+        return {
+          ...parsed,
+          message: `${parsed.message} (Cached)`
+        };
+      } catch (e) {
+        // Ignore cache parse error
+      }
+    }
+  }
+
   // If no API key provided, return curated catalog results
   if (!API_KEY || API_KEY === 'undefined') {
     return {
@@ -110,11 +127,21 @@ export async function searchClassicVideos({ query = '', yearFilter = 'ALL', cate
       };
     });
 
-    return {
+    const result = {
       videos: apiVideos,
       source: 'LIVE_YOUTUBE_API',
       message: 'Connected to YouTube Data API v3 (2009–2013 Date Range Active)'
     };
+
+    if (typeof window !== 'undefined' && window.sessionStorage) {
+      try {
+        sessionStorage.setItem(cacheKey, JSON.stringify(result));
+      } catch (e) {
+        // Ignore quota exceeded for sessionStorage
+      }
+    }
+
+    return result;
   } catch (err) {
     console.warn('YouTube API call failed or quota reached, using curated fallback:', err);
     return {
