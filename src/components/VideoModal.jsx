@@ -6,7 +6,6 @@ export default function VideoModal({ video, onClose, relatedVideos, onSelectRela
 
   const embedUrl = `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
   const watchUrl = `https://www.youtube.com/watch?v=${video.id}`;
-  const likeRatio = video.likeRatio || 97;
 
   return (
     <div className="yt-modal-backdrop" onClick={onClose}>
@@ -66,13 +65,6 @@ export default function VideoModal({ video, onClose, relatedVideos, onSelectRela
 
                 <div className="yt-stats-info">
                   <div className="yt-view-count">{video.viewCount || '2,450,120 views'}</div>
-                  <div className="yt-like-bar-container" title={`${likeRatio}% Likes`}>
-                    <div className="yt-like-bar-fill" style={{ width: `${likeRatio}%` }}></div>
-                  </div>
-                  <div className="yt-like-text">
-                    <ThumbsUp size={11} style={{ display: 'inline', marginRight: 3 }} />
-                    <span>{likeRatio}% rating</span>
-                  </div>
                 </div>
               </div>
 

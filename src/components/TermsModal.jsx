@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, FileText, AlertCircle, ExternalLink, CheckCircle } from 'lucide-react';
+import { X, FileText, AlertCircle, ExternalLink, Mail } from 'lucide-react';
 
 export default function TermsModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -28,6 +28,13 @@ export default function TermsModal({ isOpen, onClose }) {
               <p style={{ margin: '4px 0 0', color: '#555', fontSize: '12px' }}>
                 LoL Tube Classic is an independent nostalgia project celebrating 2009–2013 League of Legends video history.
               </p>
+            </div>
+          </div>
+
+          {/* Contact Information (Policy III.A.2i) */}
+          <div style={{ background: '#eef3fd', border: '1px solid #c6dafc', borderLeft: '4px solid #1a73e8', padding: '12px 16px', borderRadius: '4px', marginBottom: '20px' }}>
+            <div style={{ fontSize: '12px', color: '#3c4043' }}>
+              <strong>API Client Owner / Developer Contact:</strong> Christian Gomez (<a href="mailto:gomezc1998@gmail.com" style={{ color: '#1a73e8', textDecoration: 'underline' }}>gomezc1998@gmail.com</a>)
             </div>
           </div>
 
@@ -70,7 +77,7 @@ export default function TermsModal({ isOpen, onClose }) {
           </p>
 
           <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid #e0e0e0', textAlign: 'center', color: '#666', fontSize: '11px' }}>
-            Last updated: July 2026 • LoL Tube Classic
+            Last updated: August 2026 • LoL Tube Classic • Christian Gomez
           </div>
         </div>
       </div>

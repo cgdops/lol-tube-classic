@@ -680,8 +680,10 @@ a:hover {
 }
 
 .yt-related-thumb {
-  width: 100px;
-  aspect-ratio: 16/9;
+  width: 124px;
+  height: 70px;
+  min-width: 124px;
+  min-height: 70px;
   object-fit: cover;
   flex-shrink: 0;
   background: #000;
@@ -821,13 +823,6 @@ a:hover {
     padding-top: 8px;
   }
 
-  .yt-like-bar-container {
-    width: 100%;
-  }
-
-  .yt-related-thumb {
-    width: 85px;
-  }
 }
 
 @media (max-width: 480px) {

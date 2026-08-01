@@ -121,7 +121,6 @@ export async function searchClassicVideos({ query = '', yearFilter = 'ALL', cate
         category: category !== 'ALL' ? category : 'esports',
         duration: `${min}:${sec}`,
         viewCount: `${(Math.floor(Math.abs(hash) % 50) + 1.2).toFixed(1)}M views`,
-        likeRatio: 95 + (Math.abs(hash) % 5),
         description: item.snippet.description || 'Uploaded during classic League of Legends era (2009-2013).',
         thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url
       };

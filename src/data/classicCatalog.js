@@ -11,7 +11,6 @@ export const CLASSIC_CATALOG = [
     category: "dunkey",
     duration: "2:45",
     viewCount: "5,420,100",
-    likeRatio: 98,
     description: "Dunkey showcases classic Season 2 dunking action with Jarvan IV and Dunkmaster Yi commentary.",
     thumbnail: "https://i.ytimg.com/vi/m2ONLDKum38/hqdefault.jpg"
   },
@@ -25,7 +24,6 @@ export const CLASSIC_CATALOG = [
     category: "esports",
     duration: "2:15",
     viewCount: "12,900,000",
-    likeRatio: 99,
     description: "Fnatic's xPeke carries out the most famous play in League of Legends esports history, outplaying SK Gaming's Kev1n under the Nexus.",
     thumbnail: "https://i.ytimg.com/vi/XdN67NuhMW4/hqdefault.jpg"
   },
@@ -39,7 +37,6 @@ export const CLASSIC_CATALOG = [
     category: "esports",
     duration: "1:30",
     viewCount: "18,400,000",
-    likeRatio: 99,
     description: "'Look at the cleanse, look at the moves! Faker, WHAT WAS THAT?!' - DoA's iconic casting during SKT T1 Faker's mirror 1v1 against KT Ryu.",
     thumbnail: "https://i.ytimg.com/vi/Z93Sdirve7s/hqdefault.jpg"
   },
@@ -53,7 +50,6 @@ export const CLASSIC_CATALOG = [
     category: "music",
     duration: "2:45",
     viewCount: "115,200,000",
-    likeRatio: 99,
     description: "The official Season 3 animated music video celebrating the chaotic debut of Jinx on Summoner's Rift.",
     thumbnail: "https://i.ytimg.com/vi/KedDZiXoVTw/hqdefault.jpg"
   },
@@ -67,7 +63,6 @@ export const CLASSIC_CATALOG = [
     category: "spotlights",
     duration: "4:42",
     viewCount: "6,500,000",
-    likeRatio: 98,
     description: "Phreak introduces Lee Sin the Blind Monk, building tons of damage and dealing tons of damage as a jungler.",
     thumbnail: "https://i.ytimg.com/vi/eX0xYgU7d_0/hqdefault.jpg"
   },
@@ -81,7 +76,6 @@ export const CLASSIC_CATALOG = [
     category: "spotlights",
     duration: "5:50",
     viewCount: "5,100,000",
-    likeRatio: 97,
     description: "Phreak showcases Riven the Exile upon her initial release in Season 1.",
     thumbnail: "https://i.ytimg.com/vi/g9ZX_4Fw_3s/hqdefault.jpg"
   },
@@ -95,7 +89,6 @@ export const CLASSIC_CATALOG = [
     category: "dunkey",
     duration: "3:14",
     viewCount: "7,900,000",
-    likeRatio: 98,
     description: "Dunkey embarks on a tactical stealth mission as Teemo in Season 2.",
     thumbnail: "https://i.ytimg.com/vi/hLq2_a7L_n0/hqdefault.jpg"
   },
@@ -109,7 +102,6 @@ export const CLASSIC_CATALOG = [
     category: "montages",
     duration: "6:24",
     viewCount: "3,250,000",
-    likeRatio: 97,
     description: "Protatomonster's iconic community play submission series featuring insane outplays from Season 3.",
     thumbnail: "https://i.ytimg.com/vi/2N7wA8Y_e-s/hqdefault.jpg"
   },
@@ -123,7 +115,6 @@ export const CLASSIC_CATALOG = [
     category: "esports",
     duration: "45:10",
     viewCount: "3,800,000",
-    likeRatio: 99,
     description: "Taipei Assassins (TPA) shock the world by defeating Korean powerhouse Azubu Frost to win the 2012 Summoner's Cup.",
     thumbnail: "https://i.ytimg.com/vi/l4_102C8W84/hqdefault.jpg"
   },
@@ -137,7 +128,6 @@ export const CLASSIC_CATALOG = [
     category: "offmeta",
     duration: "1:45",
     viewCount: "1,850,000",
-    likeRatio: 98,
     description: "HotshotGG's iconic Season 1 AP Nidalee spear chunking 80% HP from two screens away.",
     thumbnail: "https://i.ytimg.com/vi/XdN67NuhMW4/hqdefault.jpg"
   }

@@ -57,9 +57,9 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
           League of Legends is a registered trademark of Riot Games, Inc. Video content and metadata are powered by YouTube API Services.
         </div>
 
-        {/* Copyright */}
-        <div style={{ fontSize: '11px', color: '#aaa' }}>
-          © 2026 LoL Tube Classic • All Rights Reserved
+        {/* Copyright & Contact Info */}
+        <div style={{ fontSize: '11px', color: '#888' }}>
+          © 2026 LoL Tube Classic • Developer: Christian Gomez (<a href="mailto:gomezc1998@gmail.com" style={{ color: '#666', textDecoration: 'underline' }}>gomezc1998@gmail.com</a>) • All Rights Reserved
         </div>
       </div>
     </footer>
