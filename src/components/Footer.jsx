@@ -59,7 +59,7 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
 
         {/* Copyright & Contact Info */}
         <div style={{ fontSize: '11px', color: '#888' }}>
-          © 2026 LoL Tube Classic • Developer: Christian Gomez (<a href="mailto:gomezc1998@gmail.com" style={{ color: '#666', textDecoration: 'underline' }}>gomezc1998@gmail.com</a>) • All Rights Reserved
+          © 2026 LoL Tube Classic • Developer: Christian Gomez (<a href="mailto:chris.smply.me@gmail.com" style={{ color: '#666', textDecoration: 'underline' }}>chris.smply.me@gmail.com</a>) • All Rights Reserved
         </div>
       </div>
     </footer>

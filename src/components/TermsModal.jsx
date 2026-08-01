@@ -34,7 +34,7 @@ export default function TermsModal({ isOpen, onClose }) {
           {/* Contact Information (Policy III.A.2i) */}
           <div style={{ background: '#eef3fd', border: '1px solid #c6dafc', borderLeft: '4px solid #1a73e8', padding: '12px 16px', borderRadius: '4px', marginBottom: '20px' }}>
             <div style={{ fontSize: '12px', color: '#3c4043' }}>
-              <strong>API Client Owner / Developer Contact:</strong> Christian Gomez (<a href="mailto:gomezc1998@gmail.com" style={{ color: '#1a73e8', textDecoration: 'underline' }}>gomezc1998@gmail.com</a>)
+              <strong>API Client Owner / Developer Contact:</strong> Christian Gomez (<a href="mailto:chris.smply.me@gmail.com" style={{ color: '#1a73e8', textDecoration: 'underline' }}>chris.smply.me@gmail.com</a>)
             </div>
           </div>
 

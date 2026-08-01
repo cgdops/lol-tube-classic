@@ -40,7 +40,7 @@ export default function PrivacyModal({ isOpen, onClose }) {
             </h4>
             <div style={{ fontSize: '12px', color: '#3c4043' }}>
               <div><strong>Developer / API Client Owner:</strong> Christian Gomez</div>
-              <div><strong>Contact Email:</strong> <a href="mailto:gomezc1998@gmail.com" style={{ color: '#1a73e8', textDecoration: 'underline' }}>gomezc1998@gmail.com</a></div>
+              <div><strong>Contact Email:</strong> <a href="mailto:chris.smply.me@gmail.com" style={{ color: '#1a73e8', textDecoration: 'underline' }}>chris.smply.me@gmail.com</a></div>
               <div><strong>Project Repository:</strong> <a href="https://github.com/cgdops/lol-tube-classic" target="_blank" rel="noopener noreferrer" style={{ color: '#1a73e8', textDecoration: 'underline' }}>https://github.com/cgdops/lol-tube-classic</a></div>
             </div>
           </div>
